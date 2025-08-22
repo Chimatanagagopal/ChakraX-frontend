@@ -27,7 +27,7 @@ const RideFeedback = ({ rideId, token, onClose }) => {
     setError('');
     try {
       const response = await axios.patch(
-        `http://localhost:8000/rides/${rideId}/`,
+        `https://chakrax-backend1-22.onrender.com/rides/${rideId}/`,
         { rating, feedback },
         {
           headers: {

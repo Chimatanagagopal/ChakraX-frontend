@@ -15,7 +15,7 @@ const ProfileModal = ({ onClose }) => {
     const fetchProfile = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('http://127.0.0.1:8000/profiles/', {
+        const response = await axios.get('https://chakrax-backend1-22.onrender.com/profiles/', {
           headers: {
             Authorization: `Token ${token}`,
           },

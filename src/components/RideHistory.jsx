@@ -15,7 +15,7 @@ const RideHistory = ({ onClose }) => {
 
     const token = localStorage.getItem('token');
     axios
-      .get('http://127.0.0.1:8000/rides/', {
+      .get('https://chakrax-backend1-22.onrender.com/rides/', {
         headers: {
           Authorization: `Token ${token}`,
         },

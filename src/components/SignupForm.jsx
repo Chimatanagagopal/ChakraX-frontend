@@ -24,7 +24,7 @@ const RegisterForm = ({ onSwitchToLogin }) => {
     setMessage('');
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/register/', formData);
+      const response = await axios.post('https://chakrax-backend1-22.onrender.com/register/', formData);
       const data = response.data;
 
       if (data.token) {

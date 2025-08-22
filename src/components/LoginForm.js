@@ -17,7 +17,7 @@ const LoginForm = ({ setIsAuthenticated, onSwitchToRegister }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://127.0.0.1:8000/login/', formData);
+      const res = await axios.post('https://chakrax-backend1-22.onrender.com/login/', formData);
       const { token } = res.data;
 
       localStorage.setItem('token', token);

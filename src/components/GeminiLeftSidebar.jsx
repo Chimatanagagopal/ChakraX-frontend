@@ -31,7 +31,7 @@ const GeminiLeftSidebar = ({ onMenuItemClick, activeMenuItem, setIsAuthenticated
 
     const openFeedbackModal = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/rides/', {
+            const response = await axios.get('https://chakrax-backend1-22.onrender.com/rides/', {
                 headers: {
                     Authorization: `Token ${token}`,
                 },
